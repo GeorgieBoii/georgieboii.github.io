@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	font-family: arial;
+}
+
+.navbar li a.icon {
+	display: none;
+}
+
+@media screen and (max-width: 770px) {
+	
+	.navbar li a:not(:first-child) {display: none;}
+	.navbar li a.icon {
+		float: right;
+		display: block;
+	}
+	
+	.navbar.responsive { overflow: auto; height: auto !important;}
+	
+	.navbar li a{
+		float: left;
+		display: block;
+		text-align: left;
+	}
+}
+
+/*#specialist:after {
+	content: "";
+	clear: both;
+	display: block;
+}
+*/
+
+h1 { 
+	color: #6798c5;
+	font-weight: 100;
+}
+
+h2 {
+	color: #6798c5;
+	font-weight: 100;
+	padding-left: 10px;
+}
+
+p {
+	padding-left: 30px;
+}
+
+#garage {
+	float: left;
+	margin-bottom: 50px;
+	padding-bottom: 70px;
+}
+
+#specialist {
+	float: left;
+	margin-bottom: 50px;
+}
+
+.logo {
+	margin-top: -20px;
+	padding: 20px;
+	float: left;
+}
+
+#sticky {
+  position: fixed;
+}
+
+#hero {
+	width: 100%;
+	float: left;
+}
+
+.navbar a{
+	color: #333;
+	text-decoration: none;
+	background-color: #ffffff;
+}
+
+.navbar a:hover {
+	border-bottom: 2px solid #3498DB;
+	padding-bottom: 3px;
+}
+
+.navbar {
+	background-color: #fff;
+	width: 100%;
+	float: left;
+	margin-top: 0px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	overflow: hidden;
+	height: 80px;
+	z-index: 2;
+}
+
+.navbar li {
+	float: right;
+	padding: 20px;
+	list-style-type: none;
+}
